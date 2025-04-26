@@ -1,1 +1,2 @@
-# My-projects-Front-end-dev
+#  📁 My projects (Front End Development)
+💻 HTML / CSS / JavaScript 

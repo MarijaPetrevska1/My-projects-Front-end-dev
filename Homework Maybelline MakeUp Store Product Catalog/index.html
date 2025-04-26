@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maybelline Makeup Store</title>
+    <link rel="stylesheet" href="./scripts/style.css" />
+  </head>
+  <body>
+    <div class="store">
+      <!-- Make up online store -->
+       <!-- Header -->
+      <header>
+        <!-- Heading 1 and paragraph -->
+        <h1>Maybelline Makeup Store</h1>
+        <p class="first-paragraph">
+          "Welcome to Maybelline MakeUp Store, where beauty meets artistry. Our
+          collection of high-quality makeup is designed to inspire and elevate
+          your beauty routine. Whether you're a makeup pro or just starting out,
+          we’re here to provide the best products, expert advice, and a shopping
+          experience that makes you feel amazing. Step into our store and
+          discover the tools to express your unique style!"
+        </p>
+      </header>
+
+      <!-- Search Bar Section -->
+      <div class="search-container">
+        <input
+          type="text"
+          id="search-box"
+          placeholder="Search for products..."
+        />
+        <button onclick="searchProducts()">Search</button>
+      </div>
+
+      <!-- Category Filter Menu -->
+      <nav>
+        <ul id="category-menu">
+        </ul>
+      </nav>
+
+      <!-- Product Grid -->
+      <div id="product-grid" class="product-grid"></div>
+
+      <!-- Pagination -->
+      <div class="pagination">
+        <button id="prev" >Previous</button>
+        <button id="next" >Next</button>
+      </div>
+
+      <!-- Cart -->
+      <div id="cart">
+        <h2>Cart</h2>
+        <ul id="cart-items"></ul>
+        <button onclick="makePurchase()">Make Purchase</button>
+        <button onclick="clearCart()">Clear Cart</button>
+        <!-- Clear Cart Button -->
+      </div>
+
+      <!-- Loading Spinner -->
+      <div id="loading" class="loading-spinner" style="display: none"></div>
+
+      <!-- Wishlist Section -->
+      <div id="wishlist" class="wishlist">
+        <h2>Wishlist</h2>
+        <ul id="wishlist-items"></ul>
+      </div>
+
+      <div class="product">
+        <h2 class="product-name">Maybelline products</h2>
+        <!-- Rating Section -->
+        <div class="product-rating">
+          <span id="product-rating">★★★★☆</span>
+          <!-- Rating -->
+          <span id="review-count">(100 Reviews)</span>
+          <!-- Total Reviews Count -->
+        </div>
+
+        <!-- Review Form Section -->
+        <div class="review-form">
+          <h3>Write a Review</h3>
+          <form id="review-form">
+            <div class="stars">
+              <label for="rating">Rate the Products:</label>
+              <select id="rating" required>
+                <option value="5">★★★★★</option>
+                <option value="4">★★★★☆</option>
+                <option value="3">★★★☆☆</option>
+                <option value="2">★★☆☆☆</option>
+                <option value="1">★☆☆☆☆</option>
+              </select>
+            </div>
+            <div class="review-input">
+              <label for="review-text">Your Review:</label>
+              <textarea id="review-text" required></textarea>
+            </div>
+            <button type="submit">Submit Review</button>
+          </form>
+        </div>
+
+        <!-- Reviews Section -->
+        <div class="reviews">
+          <h3>Customer Reviews</h3>
+          <div id="reviews-list">
+            <!-- Reviews will be dynamically inserted here -->
+          </div>
+        </div>
+        <!-- Add this loading spinner in the HTML -->
+        <div id="loading" class="loading-spinner" style="display: none">
+          Loading...
+        </div>
+      </div>
+    </div>
+<!-- Footer -->
+    <footer>
+      <div class="footer-content">
+
+        <!-- Social Media Sharing -->
+        <div class="social-share">
+          <h3>Share this product:</h3>
+          <a
+            href="https://www.facebook.com/sharer/sharer.php?u=http://yourwebsite.com/product-page"
+            target="_blank"
+            class="social-icon facebook"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+              alt="Facebook"
+            />
+          </a>
+          <a
+            href="https://twitter.com/intent/tweet?url=http://yourwebsite.com/product-page"
+            target="_blank"
+            class="social-icon twitter"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/X_logo_2023.svg/1024px-X_logo_2023.svg.png"
+              alt="Twitter"
+            />
+          </a>
+          <a
+            href="https://www.pinterest.com/pin/create/button/?url=http://yourwebsite.com/product-page"
+            target="_blank"
+            class="social-icon pinterest"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png"
+              alt="Pinterest"
+            />
+          </a>
+          <a
+            href="https://api.whatsapp.com/send?text=http://yourwebsite.com/product-page"
+            target="_blank"
+            class="social-icon whatsapp"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+              alt="WhatsApp"
+            />
+          </a>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+          <h3>Contact Us</h3>
+          <ul>
+            <li><strong>Email:</strong> support@maybellinestore.com</li>
+            <li><strong>Phone:</strong> (047) 123-4567</li>
+            <li>
+              <strong>Address:</strong> 123 Partizanska Street, Bitola,
+              Macedonia
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

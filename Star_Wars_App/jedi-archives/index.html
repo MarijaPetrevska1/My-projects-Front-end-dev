@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jedi Archives</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+
+    <img src="src/assets/img/logo.png" alt="star wars logo" class="center medium" id="starWarsLogo">
+
+    <div class="row">
+        <div class="col"></div>
+        <div class="col">
+            <img src="src/assets/img/cosmonaut.svg" alt="person" class="center small imgBtn" id="peopleBtn">
+        </div>
+        <div class="col">
+            <img src="src/assets/img/rocket.svg" alt="ship" class="center small imgBtn" id="shipsBtn">
+        </div>
+        <div class="col"></div>
+    </div>
+    <img src="src/assets/img/loader.gif" class="center" id="loader">
+    <div id="result">
+        <!-- Used to display data dynamically -->
+        <!-- <table class="table table-dark table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Height</th>
+                    <th>Mass</th>
+                    <th>Gender</th>
+                    <th>Birth Year</th>
+                    <th>Appearances</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bob Bobsky</td>
+                    <td>180</td>
+                    <td>80</td>
+                    <td>m</td>
+                    <td>232</td>
+                    <td>432432</td>
+                </tr>
+            </tbody>
+        </table> -->
+    </div>
+    <div class="row">
+        <div class="col"></div>
+        <div class="col">
+            <button class="btn btn-warning center" id="prevBtn">
+                << </button>
+        </div>
+        <div class="col">
+            <button class="btn btn-warning center" id="nextBtn">>></button>
+        </div>
+        <div class="col"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./src/app.js"></script>
+</body>
+
+</html>

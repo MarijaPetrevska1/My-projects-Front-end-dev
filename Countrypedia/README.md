@@ -1,7 +1,9 @@
 ## CountrySearch 🌍🌎🌏 
 
 📘 **Workshop Project** 
+
 This application was created as part of a coding workshop.
+
 CountrySearch is an application that is meant to search for countries and get countries for them in real-time. The
 application is very simple. It only has one functionality: Search and show the countries in a table
 

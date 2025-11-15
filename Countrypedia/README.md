@@ -1,5 +1,3 @@
-# Build your app 🥽
-
 ## CountrySearch 🌍🌎🌏
 
 CountrySearch is an application that is meant to search for countries and get countries for them in real-time. The

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Countrypedia</title>
+</head>
+
+<body class="bg-light">
+
+    <!-- Header -->
+    <header class="bg-primary text-white py-4">
+        <div class="container text-center">
+            <h1 class="fw-bold"><a href="#" class="text-white text-decoration-none">Countrypedia</a></h1>
+            <p class="lead">
+                Simple app for gathering information about countries in the world.
+            </p>
+        </div>
+    </header>
+
+    <!-- Buttons Section -->
+    <div class="container my-4 text-center">
+        <div class="btn-group">
+            <button class="btn btn-outline-primary" id="btnEurope">Countries in Europe</button>
+            <button class="btn btn-outline-primary" id="btnNeighbors">Our neighbors</button>
+            <button class="btn btn-outline-primary" id="btnMacedonia">Macedonia</button>
+        </div>
+    </div>
+
+    <!-- Search Input -->
+    <div class="container my-4">
+        <div class="row justify-content-center">
+            <div class="col-7">
+                <div class="input-group input-group-md">
+                    <input type="text" class="form-control form-control-md" id="searchInput"
+                        placeholder="Enter country name or code">
+                    <button class="btn btn-primary btn-md" id="searchBtn">Search</button>
+                    <button class="btn btn-secondary btn-md" id="resetBtn">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div class="container text-center">
+        <div class="spinner-border text-primary" id="spinner" role="status">
+        </div>
+    </div>
+
+    <!-- Notification -->
+    <div class="container">
+        <div id="notification" class="text-center alert alert-danger"></div>
+    </div>
+
+    <!-- Country Cards -->
+    <div class="container my-4 mt-5">
+        <div class="row" id="cardContainer">
+            <!-- Cards will be dynamically added here -->
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script type="module" src="./src/app.js"></script>
+</body>
+
+</html>

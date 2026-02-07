@@ -7,3 +7,4 @@ I implemented the project step by step to better understand working with APIs,
 asynchronous JavaScript, and DOM manipulation.
 
 ## 📸 Preview
+![News App Preview](NewsSearchApp.JPG)

@@ -14,9 +14,6 @@ This project was built by following a YouTube tutorial.
 3. Add your API key in `script.js`
 4. Open `index.html` in your browser
 
-```js
-const accessKey = "YOUR_API_KEY_HERE";
-
 ## ✨ Features
 
 - Search images by keyword
@@ -30,5 +27,5 @@ const accessKey = "YOUR_API_KEY_HERE";
 
 ## 📸 Preview
 
-![App Preview](./Image1.JPG)
-![App Preview](./Image2.JPG)
+![App Preview](Image1.JPG)
+![App Preview](Image2.JPG)

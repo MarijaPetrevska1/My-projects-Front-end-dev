@@ -1,1 +1,1 @@
-Random Meme Generator (HTML, CSS, JavaScript)
+Meme Generator (HTML, CSS, JavaScript)
